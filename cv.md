@@ -17,3 +17,7 @@ My strengths: responsibility, cleverness, discipline, rationality, ability to wo
 I took several courses on HTML, CSS, Js, but it didn't give me deep knowledge.
 
 Recently I found RSS school courses and now I go through them.
+
+## Skills
+
+HTML  CSS  JavaScript  Webpack  SCSS

@@ -25,3 +25,7 @@ HTML  CSS  JavaScript  Webpack  SCSS
 ## English level
 
 I constantly learn English. Now I have B1 level
+
+## Education
+
+I graduated from the Belarusian - Russian University in Mogilev with an engineering degree. I started studying programming a long time ago. It were different courses on HTML, CSS, JS on Geekbrains, FreeCodeCamp.

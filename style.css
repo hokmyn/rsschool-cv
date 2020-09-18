@@ -45,6 +45,10 @@ h2, footer {
   text-align: center;
 }
 
+.about p {
+  margin: 0;
+}
+
 .experience a {
   text-decoration: none;
 }

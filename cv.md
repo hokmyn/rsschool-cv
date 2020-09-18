@@ -20,7 +20,7 @@ Recently I found RSS school courses and now I go through them.
 
 ## Skills
 
-HTML  CSS  JavaScript  Webpack  SCSS
+HTML,  CSS,  JavaScript,  Webpack,  SCSS, Git
 
 ## English level
 

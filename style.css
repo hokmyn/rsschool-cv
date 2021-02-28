@@ -51,10 +51,11 @@ h2, footer {
 
 .experience a {
   text-decoration: none;
+  color: #dc7616;
 }
 
 .experience a:hover {
-  text-decoration: underline;
+  color: #964e0a;
 }
 
 footer {
@@ -63,18 +64,17 @@ footer {
 }
 
 .footer-container {
-  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .github {
   display: block;
-  width: 120px;
+  width: 60px;
   height: 65px;
   padding-left: 45px;
   background-image: url('img/github.svg');
@@ -96,7 +96,7 @@ footer {
   display: block;
   position: relative;
   font-family: 'Open Sans', sans-serif;
-  width: 120px;
+  width: 100px;
   height: 35px;
   background-image: url('img/rss.svg');
   background-size: contain;

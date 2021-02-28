@@ -77,19 +77,19 @@ footer {
   width: 120px;
   height: 65px;
   padding-left: 45px;
-  background-image: url('assets/svg/github.svg');
+  background-image: url('img/github.svg');
   background-size: 35px;
   background-repeat: no-repeat;
   background-position: left center;
   line-height: 65px;
-  color: #cbd5de;
+  color: #dc7616;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   transition: 0.3s;
 }
 
 .github:hover {
-  color: #fff;
+  color: #964e0a;
 }
 
 .rss {
@@ -98,7 +98,7 @@ footer {
   font-family: 'Open Sans', sans-serif;
   width: 120px;
   height: 35px;
-  background-image: url('assets/svg/rss.svg');
+  background-image: url('img/rss.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
@@ -111,7 +111,7 @@ footer {
   right: 0;
   font-size: 21px;
   letter-spacing: -2px;
-  color: #cbd5de;
+  color: #dc7616;
   line-height: 0.9;
   font-weight: bold;
   transition: 0.3s;

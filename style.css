@@ -1,0 +1,123 @@
+body {
+  background-color:#E1FFF0;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#FFC134;
+  padding: 20px;
+}
+
+img.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E9E9E9;
+}
+
+.main-left {
+  margin-right: 25px;
+}
+
+.main-left li {
+  margin-bottom: 10px;
+}
+
+h2, footer {
+  text-align: center;
+}
+
+.about p {
+  margin: 0;
+}
+
+.experience a {
+  text-decoration: none;
+  color: #dc7616;
+}
+
+.experience a:hover {
+  color: #964e0a;
+}
+
+footer {
+  padding: 10px;
+  background-color: #E9E9E9;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.github {
+  display: block;
+  width: 60px;
+  height: 65px;
+  padding-left: 45px;
+  background-image: url('img/github.svg');
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  line-height: 65px;
+  color: #dc7616;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.3s;
+}
+
+.github:hover {
+  color: #964e0a;
+}
+
+.rss {
+  display: block;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  width: 100px;
+  height: 35px;
+  background-image: url('img/rss.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 25px;
+}
+
+.rss-year {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 21px;
+  letter-spacing: -2px;
+  color: #dc7616;
+  line-height: 0.9;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.rss:hover .rss-year {
+  right: -5px;
+  letter-spacing: 0;
+}

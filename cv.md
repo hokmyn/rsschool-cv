@@ -10,7 +10,7 @@ Discord: hokmyn#5589
 
 ## About Myself
 
-I'm 32 years old. I work as a master in the plant, but I want to become a web - developer.
+I'm 33 years old. I work as a master in the plant, but I want to become a web - developer.
 
 My strengths: responsibility, cleverness, discipline, rationality, ability to work in a team.
 

@@ -166,12 +166,14 @@ footer {
 
 .github-link {
   text-decoration: none;
+
   color: #1465bd;
   transition: all 0.3s;
 }
 
 .github-link:hover {
   color: #0a447a;
+
 }
 
 footer {
@@ -193,6 +195,7 @@ footer {
   width: 60px;
   height: 65px;
   padding-left: 45px;
+
   background-image: url("img/github.svg");
   background-size: 35px;
   background-repeat: no-repeat;

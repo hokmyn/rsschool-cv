@@ -1,70 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="wrapper">
-    <header>
-      <img class="avatar" src="img/photo.jpg" alt="Denis Kalinin">
-      <h1>Denis Kalinin</h1>
-    </header>
-    <main class="main">
-      <aside class="main-left">
-        <div class="contacts">
-          <h2>Contacts</h2>
-          <ul>
-            <li>E - mail: den_from_bykhov1988@mail.ru</li>
-            <li>Github: hokmyn</li>
-            <li>Discord: hokmyn#5589</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/monokai.min.css"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>RSSchool CV</h1>
+        <figure>
+          <img class="avatar" src="img/photo.jpg" alt="Denis Kalinin" />
+          <figcaption>Denis Kalinin</figcaption>
+        </figure>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="#contacts">Contacts</a></li>
+            <li class="nav-list__item"><a href="#about">About me</a></li>
+            <li class="nav-list__item"><a href="#english">English level</a></li>
+            <li class="nav-list__item"><a href="#education">Education</a></li>
+            <li class="nav-list__item"><a href="#skills">Skills</a></li>
+            <li class="nav-list__item"><a href="#experience">Experience</a></li>
           </ul>
+        </nav>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </header>
+      <main class="main">
+        <aside class="main-left">
+          <div id="contacts" class="contacts">
+            <h2>Contacts</h2>
+            <ul>
+              <li>E - mail: den_from_bykhov1988@mail.ru</li>
+              <li>Github: hokmyn</li>
+              <li>Discord: hokmyn#5589</li>
+            </ul>
+          </div>
+        </aside>
+        <div class="main-right">
+          <section id="about" class="about">
+            <h2>About me</h2>
+            <p>
+              I'm 33 years old. I work as a master in the plant, but I want to
+              become a web - developer.
+            </p>
+            <p>
+              My strengths: responsibility, cleverness, discipline, rationality,
+              ability to work in a team.
+            </p>
+            <p>
+              I took several courses on HTML, CSS, Js, but it didn't give me
+              deep knowledge.
+            </p>
+            <p>
+              Recently I found RSS school courses and now I go through them.
+            </p>
+          </section>
+          <section id="english" class="english">
+            <h2>English level</h2>
+            <p>I constantly learn English. Now I have B1 level</p>
+          </section>
+          <section id="education" class="education">
+            <h2>Education</h2>
+            <p>
+              I graduated from the Belarusian - Russian University in Mogilev
+              with an engineering degree.
+            </p>
+            <p>
+              I started studying programming a long time ago. It were different
+              courses on HTML, CSS, JS on Geekbrains, FreeCodeCamp and RS school
+              course 2020Q3
+            </p>
+          </section>
+          <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Webpack</li>
+              <li>SCSS</li>
+              <li>Git</li>
+            </ul>
+          </section>
+          <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <h3>Code examples</h3>
+            <pre><code class="js">
+function bubblesortOnce(a) {
+  // TODO
+  let arrRes = [];
+  let lastBiggest = 0;
+  for(let i = 0; i < a.length; i++) {
+    if(!lastBiggest) {
+      if(a[i+1]) {
+        if(a[i] < a[i+1]) {
+      arrRes.push(a[i]);
+    } else {
+      arrRes.push(a[i+1]);
+      lastBiggest = a[i];
+    }
+      } else {
+        arrRes.push(a[i]);
+      }
+  } else {
+    if(lastBiggest < a[i+1] || i+1 === a.length) {
+      arrRes.push(lastBiggest);
+      lastBiggest = 0;
+    } else {
+      arrRes.push(a[i+1]);
+    }
+  }
+    
+  }
+  return arrRes;
+}
+            </code></pre>
+            <h3>Some of my projects</h3>
+            <div class="projects">
+              <a
+                class="projects-item"
+                target="_blank"
+                href="https://rolling-scopes-school.github.io/hokmyn-JSFE2021Q1/photo-filter/"
+              >
+                <div class="descr">
+                  <h4 class="descr-title">Photo filter</h4>
+                  <p class="descr-text">
+                    A web app for adding filters to images
+                  </p>
+                  <p class="descr-tech">Technologies: HTML, CSS, JS</p>
+                </div>
+                <img src="./img/photo-filter.jpg" alt="photo-filter" />
+              </a>
+              <a
+                class="projects-item"
+                target="_blank"
+                href="https://rolling-scopes-school.github.io/hokmyn-JS2020Q3/shelter/pages/main/"
+              >
+                <div class="descr">
+                  <h4 class="descr-title">Shelter</h4>
+                  <p class="descr-text">Adaptive web page for shelter</p>
+                  <p class="descr-tech">Technologies: HTML, CSS</p>
+                </div>
+                <img src="./img/shelter.jpg" alt="shelter"
+              /></a>
+              <a
+                class="projects-item"
+                target="_blank"
+                href="https://rolling-scopes-school.github.io/hokmyn-JS2020Q3/english-for-kids/src/"
+              >
+                <div class="descr">
+                  <h4 class="descr-title">English for kids</h4>
+                  <p class="descr-text">web app for learning english</p>
+                  <p class="descr-tech">Technologies: HTML, CSS, JS</p>
+                </div>
+                <img src="./img/english-for-kids.jpg" alt="english-for-kids"
+              /></a>
+            </div>
+            <p>
+              My other training projects are stored in my
+              <a
+                class="github-link"
+                target="_blank"
+                href="https://github.com/hokmyn?tab=repositories"
+                >repositories on github</a
+              >
+            </p>
+          </section>
+          <section class="video">
+            <h2>My video resume</h2>
+            <iframe
+              src="https://www.youtube.com/embed/mKOoXqhtEzM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
         </div>
-        <div class="skills">
-          <h2>Skills</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Webpack</li>
-            <li>SCSS</li>
-            <li>Git</li>
-          </ul>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <a
+            class="github"
+            href="https://github.com/hokmyn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >hokmyn</a
+          >
+          <a
+            class="rss"
+            href="https://rs.school/js/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="rss-year">'21</span>
+          </a>
         </div>
-      </aside>
-      <div class="main-right">
-        <section class="about">
-          <h2>About me</h2>
-          <p>I'm 32 years old. I work as a master in the plant, but I want to become a web - developer.</p>
-          <p>My strengths: responsibility, cleverness, discipline, rationality, ability to work in a team.</p>
-          <p>I took several courses on HTML, CSS, Js, but it didn't give me deep knowledge.</p>
-          <p>Recently I found RSS school courses and now I go through them.</p>
-        </section>
-        <section class="english">
-          <h2>English level</h2>
-          <p>I constantly learn English. Now I have B1 level</p>
-        </section>
-        <section class="education">
-          <h2>Education</h2>
-          <p>I graduated from the Belarusian - Russian University in Mogilev with an engineering degree.</p>
-          <p>I started studying programming a long time ago. It were different courses on HTML, CSS, JS on Geekbrains, FreeCodeCamp and RS school course 2020Q3</p>
-        </section>
-        <section class="experience">
-          <h2>Code examples</h2>
-          <p>All my training projects are stored in my <a href="https://github.com/hokmyn?tab=repositories">repositories on github</a></p>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <a class="github" href="https://github.com/hokmyn" target="_blank" rel="noopener noreferrer">hokmyn</a>
-        <a class="rss" href="https://rs.school/js/" target="_blank" rel="noopener">
-          <span class="rss-year">'21</span>
-        </a>
-      </div>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
+    <div class="overlay"></div>
+    <script>
+      const nav = document.querySelector(".nav");
+      const hamburger = document.querySelector(".hamburger");
+      const overlay = document.querySelector(".overlay");
+      const listItems = document.querySelectorAll(".nav-list__item");
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", closeMenu);
+      });
+      hamburger.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", closeMenu);
+
+      function toggleMenu() {
+        nav.classList.toggle("visible");
+        overlay.classList.toggle("active");
+        hamburger.classList.toggle("rotated");
+      }
+
+      function closeMenu() {
+        nav.classList.remove("visible");
+        overlay.classList.remove("active");
+        hamburger.classList.remove("rotated");
+      }
+    </script>
+  </body>
 </html>

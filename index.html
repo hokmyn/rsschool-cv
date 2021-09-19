@@ -101,10 +101,10 @@ function bubblesortOnce(a) {
   // TODO
   let arrRes = [];
   let lastBiggest = 0;
-  for(let i = 0; i < a.length; i++) {
+  for(let i = 0; i &lt; a.length; i++) {
     if(!lastBiggest) {
       if(a[i+1]) {
-        if(a[i] < a[i+1]) {
+        if(a[i] &lt; a[i+1]) {
       arrRes.push(a[i]);
     } else {
       arrRes.push(a[i+1]);
@@ -114,7 +114,7 @@ function bubblesortOnce(a) {
         arrRes.push(a[i]);
       }
   } else {
-    if(lastBiggest < a[i+1] || i+1 === a.length) {
+    if(lastBiggest &lt; a[i+1] || i+1 === a.length) {
       arrRes.push(lastBiggest);
       lastBiggest = 0;
     } else {
@@ -182,7 +182,6 @@ function bubblesortOnce(a) {
             <iframe
               src="https://www.youtube.com/embed/mKOoXqhtEzM"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>

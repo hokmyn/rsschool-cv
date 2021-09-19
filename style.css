@@ -162,6 +162,7 @@ footer {
 .video iframe {
   max-width: 560px;
   max-height: 315px;
+  border: 0;
 }
 
 .github-link {

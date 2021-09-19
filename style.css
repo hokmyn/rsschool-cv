@@ -84,6 +84,9 @@ img.avatar {
 .hamburger span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
+.hamburger.rotated {
+  z-index: 5;
+}
 .hamburger.rotated span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -5px);
@@ -254,7 +257,7 @@ footer {
     text-align: center;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 730px) {
   .hamburger {
     display: block;
     position: absolute;
@@ -279,6 +282,7 @@ footer {
   }
   .nav.visible {
     transform: none;
+    z-index: 5;
   }
   .nav-list {
     display: flex;
@@ -290,6 +294,10 @@ footer {
   }
   .nav-list a {
     color: #232323;
+  }
+  .nav-list a:hover {
+    cursor: pointer;
+    color: #0f0f0f;
   }
 }
 @media screen and (max-width: 660px) {
